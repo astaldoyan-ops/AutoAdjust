@@ -1,0 +1,20 @@
+﻿Project: AutoAdjustPDRegulator
+MCU: STM32F446RETx (рекомендовано) / STM32F103C8Tx
+Purpose: Control analog PD regulator via digital potentiometers over SPI for automatic P,D tuning
+
+Peripherals:
+- SPI1 (Master) - MCP4251
+- ADC1 - feedback measurement
+- USART2 - debug
+- TIM2 - timing/auto-tune
+- GPIO - chip selects
+
+Pins (Nucleo-F446RE):
+SPI1_SCK  PA5
+SPI1_MISO PA6
+SPI1_MOSI PA7
+CS_P      PA4
+CS_D      PB0
+ADC_IN    PA0
+USART_TX  PA2
+USART_RX  PA3
